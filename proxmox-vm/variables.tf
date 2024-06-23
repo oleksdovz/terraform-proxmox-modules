@@ -46,8 +46,8 @@ variable "vm_id" {
   type        = number
 }
 
-variable "list_public_key_openssh" {
-  description = "List of ssh public keys"
+variable "ssh_public_key" {
+  description = "ssh public key"
   type = string
   default = ""
 }
