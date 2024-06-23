@@ -110,7 +110,7 @@ resource "proxmox_virtual_environment_vm" "vm" {
     }
 
     user_account {
-      keys     = var.list_public_key_openssh
+      keys     = [trimspace(var.list_public_key_openssh)]
       password = var.vm_password
       username = "${var.vm_username}"
     }

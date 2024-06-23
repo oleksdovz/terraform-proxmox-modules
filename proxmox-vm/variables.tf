@@ -48,8 +48,8 @@ variable "vm_id" {
 
 variable "list_public_key_openssh" {
   description = "List of ssh public keys"
-  type = list(string)
-  default = []
+  type = string
+  default = ""
 }
 
 variable "custom_script" {
