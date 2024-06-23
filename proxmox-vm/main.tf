@@ -34,7 +34,7 @@ resource "proxmox_virtual_environment_file" "cloud_config" {
         groups: sudo
         shell: /bin/bash
         ssh-authorized-keys:
-          - trimspace(var.ssh_public_key)
+          - ${var.ssh_public_key}
         sudo: ALL=(ALL) NOPASSWD:ALL
     runcmd:
     - [ systemctl, daemon-reload ]
