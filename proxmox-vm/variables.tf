@@ -24,13 +24,13 @@ variable "qcow_url" {
 
 variable "vm_username" {
   description = "username for VM"
-  default     = "ubuntu1"
+  default     = "ubuntu"
   type        = string
 }
 
 variable "vm_password" {
   description = "password for VM"
-  default     = "ubuntu1"
+  default     = "ubuntuPass!23"
   type        = string
 }
 
