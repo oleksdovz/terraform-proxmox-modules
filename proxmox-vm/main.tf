@@ -36,6 +36,10 @@ resource "proxmox_virtual_environment_file" "cloud_config" {
         ssh-authorized-keys:
           - ${var.ssh_public_key}
         sudo: ALL=(ALL) NOPASSWD:ALL
+      - name: root
+        shell: /bin/bash
+        ssh-authorized-keys:
+          - ${var.ssh_public_key}
     runcmd:
     - [ systemctl, daemon-reload ]
     - [ systemctl, enable, qemu-guest-agent ]
