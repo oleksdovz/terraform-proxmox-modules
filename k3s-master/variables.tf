@@ -1,6 +1,5 @@
 variable "vm_username" {
   description = "username for VM"
-  default     = "ubuntu1"
   type        = string
 }
 
