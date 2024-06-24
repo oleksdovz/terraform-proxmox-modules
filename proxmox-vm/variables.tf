@@ -4,6 +4,12 @@ variable "node_name" {
   default     = "hp"
 }
 
+variable "environment" {
+  description = "environment tag"
+  type        = string
+  default     = "proxmox"
+}
+
 variable "iso_datastore_id" {
   description = "Proxmox storage volume for iso iso_datastore_id"
   type        = string

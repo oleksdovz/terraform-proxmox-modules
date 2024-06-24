@@ -54,7 +54,7 @@ resource "proxmox_virtual_environment_file" "cloud_config" {
 resource "proxmox_virtual_environment_vm" "vm" {
   name        = var.vm_name
   description = "Hostname: ${var.vm_name}\n\nSystem username: ${var.vm_username}\n${local.vm_tag}"
-  tags = ["terraform", "${var.vm_name}", "vm"]
+  tags = ["terraform", "${var.vm_name}", "vm", var.environment]
 
   node_name = var.node_name
   vm_id     = var.vm_id
