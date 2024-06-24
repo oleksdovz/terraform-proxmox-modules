@@ -8,7 +8,7 @@
 #   path = "/etc/rancher/k3s/k3s.yaml"
 # }
 
-locals {
-  k3s_config = replace(data.remote_file.config.content, "127.0.0.1", var.remote_ip)
-}
+# locals {
+#   k3s_config = replace(data.remote_file.config.content, "127.0.0.1", var.remote_ip)
+# }
 
