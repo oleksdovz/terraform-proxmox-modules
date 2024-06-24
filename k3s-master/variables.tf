@@ -5,7 +5,7 @@ variable "vm_username" {
 
 variable "ssh_private_key" {
   description = "ssh private key"
-  type        = string
+  type        = any
 }
 
 variable "remote_ip" {
